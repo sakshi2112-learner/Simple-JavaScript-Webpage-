@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables using different data types</title>
+    <link rel="stylesheet" href="css.css">
+
+
+
+  </head>
+  <body>
+
+
+<div class="div1">
+    <form>
+
+
+    <h1 style="text-align: center; color:#334b79">Declaration of variables using different data types.</h1>
+    <p id="demo"></p>
+    <h2>Data type</h2>
+	Enter string :  <input type="text" id="input" required>
+    Enter Number :  <input type="number" id="io" required >
+    Enter boolean: 
+      <select id="myDropdown" >
+      <option>True</option>
+      <option>False</option>
+     
+      </select>
+    </form>
+
+
+
+
+      
+
+    <p id="datatype"></p>
+
+    <p id="object"></p>
+
+    
+
+	<button onclick="display()" class="btn1">submit</button>
+
+    <script>
+        
+const song = {firstName:"kiska hai ye tumko intezaar, ", lastName:"Main hoon na :)" , description: "fav song "};
+document.write("<br><br><br><h2>Object</h2>fav song:  "  + song.firstName + song.lastName);
+
+
+
+
+let arr = ["Time Management" , "Negotiation" , "Decision Making" , "Adaptability"]
+  document.write("<br><br><br><h2>Array</h2>Skills:  "  + arr);
+
+    </script>
+
+
+</div>
+
+
+   
+
+
+
+
+    <div class="div2">
+         <h1 style="text-align: center; color:#334b79">Performing Arithmetic Operators .</h1>
+         <h1>Dropdown Calculator</h1>
+         <label for="num1">Number 1:</label>
+         <input type="number" id="num1">
+         <label for="num2">Number 2:</label>
+         <input type="number" id="num2">
+         <label for="operation">Select operation:</label>
+         <select id="operation">
+           <option value="add">Add</option>
+           <option value="sub">Subtract</option>
+           <option value="mul">Multiply</option>
+           <option value="div">Divide</option>
+
+         </select>
+         <br>
+         <br>
+         <button onclick="calculate()">Calculate</button>
+         <p id="result"></p>
+         <p id="modulas"></p>
+
+      
+
+        </div>
+
+
+
+
+        <div class="div3">
+
+         <h1 style="text-align: center; color:#334b79">Performing Comparison Operators .</h1>
+
+         
+         Enter num1 :  <input type="number" id="numb1">
+         Enter num2 :  <input type="number" id="numb2">
+
+         <p id="comp"></p>
+
+
+         <button onclick="compare()"  class="btn1">compare nos</button>
+
+        </div>
+
+
+
+        <div class="div4">
+
+         <h1 style="text-align: center; color:#334b79">Performing Logical Operators .</h1>
+
+         Enter num1 :  <input type="number" id="nu1">
+         Enter num2 :  <input type="number" id="nu2">
+
+         <p id="log"></p>
+
+
+         <button onclick="logical()"  class="btn1">logically compare nos</button>
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+
+
+
+
+
+
+
+
+      
+
+
+  </body>
+</html>
